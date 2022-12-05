@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Carousel</title>
+</head>
+<body>
+  <!--header-->
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Carousel</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" tabindex="-1" aira-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" action="#">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dank">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">carousel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbav-nav me-auto mb-2 mb-md-0">
+          <li class="nav-items">
+            <a href="#home" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-items">
+            <a href="#link" class="nav-link">Link</a>
+          </li>
+          <li class="anv-items">
+            <a href="#disabled" class="nav-link disabled" tabindex="-1" aira-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form action="#" class="d-flex">
+          <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>-->
+</header>
+<!--khối carousel-->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active bg-img1">      
+      <img src="./img/IMG_0011.JPG" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>BUY YOUR WATCH</h5>
+        <p>Đồng hồ Đức chính hãng.</p>
+        <button type="button" class="btn btn-primary btn-lg">Sign up today</button>
+      </div>
+    </div>
+    <div class="carousel-item bg-img2">
+      <img src="./img/IMG_0014.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>BUY YOUR WATCH</h5>
+        <p>Chọn chiếc đồng hồ của riêng bạn.</p>
+        <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+      </div>
+    </div>
+    <div class="carousel-item bg-img3">
+      <img src="./img/IMG_0016.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>BUY YOUR WATCH</h5>
+        <p>Chọn cá tính của bạn.</p>
+        <button type="button" class="btn btn-primary btn-lg">Hot sale</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+  <div class="carosel-item active bg-img1">
+    <img src="./img/IMG_0011.JPG" class="d-block w-100 " alt="">
+    <div class="container">
+      <div class="carousel-caption text-start">       
+        <h1>Đồng hồ Đức AUth</h1>
+        <p>hãy chọn chiếc dồng hồ của bạn</p>
+        <p><a href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="carosel-item bg-img2">
+    <img src="./img/IMG_0014.jpg" class="d-block w-100 " alt="">
+    <div class="container">
+      <div class="carousel-caption">
+        <h1>Đồng hồ Đức AUth</h1>
+        <p>hãy chọn chiếc dồng hồ của bạn</p>
+        <p><a href="#" class="btn btn-lg btn-primary">learn more</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="carosel-item bg-img3">
+    <img src="./img/IMG_0016.jpg" class="d-block w-100" alt="">
+    <div class="container">
+      <div class="carousel-caption text-end">
+        <h1>Đồng hồ Đức AUth</h1>
+        <p>hãy chọn chiếc dồng hồ của bạn</p>
+        <p><a href="#" class="btn btn-lg btn-primary">browe gallery</a></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="carousel-indicators">
+  <button class="active" type="button" data-bs-target="#myCarolsel" data-bs-slide-to="0" aria-label="slide-1" aria-current="true"></button>
+  <button class="" type="button" data-bs-target="#myCarolsel" data-bs-slide-to="1" aria-label="slide-2" ></button>
+  <button class="" type="button" data-bs-target="#myCarolsel" data-bs-slide-to="2" aria-label="slide-3" ></button>
+</div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">next</span>
+    </button>
+</div>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
